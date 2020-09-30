@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="191.0" prefWidth="357.0" xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8" fx:controller="msoe.nelsonni.lab09.KernelController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Button mnemonicParsing="false" onAction="#blur" prefHeight="25.0" prefWidth="125.0" text="Blur" GridPane.columnIndex="3" />
+        <Button mnemonicParsing="false" onAction="#sharpen" prefHeight="25.0" prefWidth="190.0" text="Sharpen" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <Button mnemonicParsing="false" onAction="#apply" prefHeight="37.0" prefWidth="173.0" text="Apply" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </Button>
+        <TextField fx:id="topLeft">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="topMiddle" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="topRight" GridPane.columnIndex="2">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="middleLeft" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="middleMiddle" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="middleRight" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="bottomLeft" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="bottomMiddle" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+        <TextField fx:id="bottomRight" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets right="5.0" />
+            </GridPane.margin>
+        </TextField>
+    </children>
+</GridPane>
